@@ -1,0 +1,22 @@
+---
+title: "Netflix titles"
+author: "Insert your name here"
+output: html_document
+---
+
+Find out more about the data [here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-04-20/readme.md).
+
+Start by loading the data:
+
+```{r message = FALSE}
+library(tidyverse)
+netflix_titles <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-04-20/netflix_titles.csv')
+```
+
+And taking a peek at it:
+
+```{r}
+glimpse(netflix_titles)
+```
+
+And then...
