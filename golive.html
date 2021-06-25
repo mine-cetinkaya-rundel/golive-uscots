@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Going Live:</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=" 🔗 bit.ly/golive-uscots" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Going Live:
+## Live Coding as an (Incredibly) Effective Tool for Teaching Programming
+### <br>🔗 <a href="https://bit.ly/golive-uscots">bit.ly/golive-uscots</a>
+### <br>Mine Çetinkaya-Rundel
+
+---
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="https://bit.ly/golive-uscots" target="_blank"&gt;bit.ly/golive-uscots&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+class: middle
+
+**Live coding:** Instead of presenting pre-written material, the teacher writes code in front of the class while the learners follow along, typing it in and running it as they go.
+
+---
+
+class: inverse, middle
+
+# .hand[Why] code live?
+
+---
+
+class: middle
+
+.hand[
+Think back to your last math heavy course, one with proofs or problems that required multi-step solutions. 
+
+Did you prefer to see all steps at once or prefer that the instructor walk through the steps at a reasonable pace, revealed them incrementally, and talked through their reasoning?
+]
+
+---
+
+## Why live code?
+
+- Slows you down
+
+--
+- Helps you articulate each step
+
+--
+- Allows you to demonstrate the workflow as well as the code
+
+--
+- Facilitates unintended knowledge transfer: people learn more than we are consciously teaching by watching how we do things
+
+--
+- (Most likely) causes you to make errors (that you can turn into teachable moments or use to show everyone makes errors!)
+
+--
+- Demonstrates the order in which programs should be written
+
+--
+- Gives teachers a chance to emphasize the importance of small steps with frequent feedback
+
+--
+- Saves you time
+
+---
+
+class: middle
+
+## Why live code?
+
+.hand[Now with empirical evidence...]
+
+---
+
+### [The effectiveness of live-coding to teach introductory programming](https://dl.acm.org/doi/10.1145/2445196.2445388)
+*Rubin (2013)*  
+*[doi.org/10.1145/2445196.2445388](https://doi.org/10.1145/2445196.2445388)*
+ 
+- Audience: Introductory C++ course
+- Treatment: instructors live code, control: instructors never type, only view, compile, and execute code examples
+- Evidence: Pre/post surveys + grades
+- "Based on our results, we conclude that teaching via live-coding is as good as if not better than using static code examples."
+
+---
+
+### [Role of Live-coding in Learning Introductory Programming](https://doi.org/10.1145/3279720.3279725)
+*Raj, Patel, Halverson, Halverson (2018)*  
+*[doi.org/10.1145/3279720.3279725](https://doi.org/10.1145/3279720.3279725)*
+ 
+- Audience: Introductory data structures course
+- Evidence: Pre/post test + open-ended feedback
+- "We found that live-coding (1) makes the process of programming easy to understand for novice programmers, (2) helps students learn the process of debugging, (3) exposes students to good programming practices. [...] students prefer to code along with the instructor during a live-coding session rather than being mere observers."
+
+---
+
+## Why not *just* live code?
+
+- Providing material multiple formats to learn from is better than providing just one
+
+--
+- Can be hard to follow if you're not careful
+
+--
+- Can be difficult to get a permanent record of (though this is less of a problem for virtual teaching)
+
+---
+
+class: inverse, middle
+
+# .hand[What] to code live?
+
+---
+
+## Live code or not to live code
+
+Any topic will benefit from livecoding, but for some using live coding as the **primary** communication method is more appropriate than others.
+
+--
+
+- Live code first:
+  - RStudio IDE
+  - Working with Git and GitHub
+  - Using R Markdown
+  - Making a reproducible example
+
+--
+- Static materials first, live code second:
+  - Anything involving new syntax/API (dplyr, ggplot2, etc.)
+  - Anything involving interpreting results
+  - etc.
+
+---
+
+class: inverse, middle
+
+# .hand[How] to code live?
+
+---
+
+class: middle
+
+&lt;iframe width="1200" height="530"  src="https://www.youtube.com/embed/Vacuk_kNOz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+class: middle
+
+&lt;iframe width="1200" height="530" src="https://www.youtube.com/embed/T5FKByBEe0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+## Live coding in person
+
+- **Keep in mind:**
+  - Room size
+  - Audience size
+  - Your own setup
+  
+- **Tip:** Don't rely on just the physical screen, use a secondary method to get your code in front of students' eyes (e.g. 📦 [livecode](https://github.com/rundel/livecode))
+
+---
+
+## Live coding virtually
+
+- **Keep in mind:** Audience watching on smaller devices
+  
+- **Tips:**
+  - Test audience experience in a test run
+  - If you have a live audience, give them plenty of opportunity and simple tooling to participate (e.g. Zoom chat)
+
+---
+
+## Virtual, live audience
+
+&lt;img src="images/live.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Virtual, prerecorded
+
+&lt;img src="images/prerecord.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Live coding with strictly limited time
+
+.hand[e.g. meetup presentations, conference talks, etc.]
+
+&lt;br&gt;
+
+**Tip:** Consider pre-recording a screencast that you can narrate during the event
+
+---
+
+## Live coding - .hand[scripted]
+
+.your-turn[
+Let's learn about data wrangling! 
+
+- Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
+- Join the workspace.
+- Click on **Projects** on the top bar.
+- Click **START** for the project titled *Hotel bookings*.
+
+**Demo:** Exercises 1-4  
+**Your turn:** Exercises 5-8 (15 minutes)  
+**Notes:** Add any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
+]
+
+---
+
+## Live coding - .hand[unscripted]
+
+.your-turn[
+Let's learn about parks! 
+
+- Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
+- Join the workspace (if you haven't yet done so) and click on **Projects** on the top bar.
+- Click **START** for the project titled *Parks*.
+]
+
+---
+
+## Livecoding pedagogy
+
+- Build in delinerate fumbles and embrace your real mistakes
+
+--
+- Ask for predictions
+
+--
+- Take it slow
+
+--
+- Be seen and heard
+
+--
+- Mirror your learner's environment (then teach them customisation)
+
+--
+- Use screen wisely
+
+--
+- Double devices (when possible)
+
+--
+- Go beyond the code: draw diagrams
+
+--
+- Improvise (particularly with a live audience)
+
+.footnote[
+.small[
+Greg Wilson. [Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them](https://teachtogether.tech/). CRC Press, 2019.
+]
+]
+
+---
+
+## Livecoding tips
+
+- Disable notifications
+--
+
+- Omit or fully narrate keyboard shortcuts
+
+--
+- Use accessibility tools to enhance what's on your screen (e.g. [Mouseposé](https://boinx.com/mousepose/overview/) for Mac or [PointerFocus](http://www.pointerfocus.com/) for Windows)
+
+--
+- If need to type passwords, keep "off screen" notes handy that you can copy-paste from
+
+--
+- Use an RStudio addin to quickly switch to "factory settings" (e.g. 📦 [addmins](https://github.com/mine-cetinkaya-rundel/addmins/blob/master/R/use_teach_mode.R))
+
+---
+
+## Livecoding tips
+
+Avoid switching between screens
+
+&lt;img src="images/shiny-livecode.jpeg" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle
+
+.your-turn[
+Let's explore Netflix titles! 
+
+- Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
+- Join the workspace (if you haven't yet done so) and click on **Projects** on the top bar.
+- Click **START** for the project titled *Netflix titles*.
+- Improvise! 
+- **Notes:** Take notes on what feels good/right, what is challenging, or any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
+]
+
+---
+
+class: middle
+
+# .hand[Enhance] live coding
+
+---
+
+class: middle
+
+.hand[
+"Just google it!" is easier said than done! 
+
+It’s important to take your students through the process of finding help as well as asking good questions to help you help them.
+]
+
+---
+
+## (Not so good) help with googling
+
+&lt;br&gt;
+
+.center[
+&lt;iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/6tw5uOth4AY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+---
+
+## (Better) help with googling
+
+&lt;br&gt;
+
+.center[
+&lt;iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/2sp2isnqoFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+---
+
+class: middle
+
+# .hand[Learn more] about live coding
+
+---
+
+## Resources
+
+- Live coding chapter in Teaching Tech Together by Greg Wilson, [in English](https://teachtogether.tech/en/index.html#s:performance-live) and [in Spanish](https://teachtogether.tech/es/index.html#s:performance-live)
+
+- [Code live from RStudio, and share it with the World in real time](https://bitsandbricks.github.io/post/code-live-from-rstudio-and-share-it-with-the-world-in-real-time/) by H. Antonio Vazquez Brust
+
+---
+
+## Inspiration: Live coders on YouTube
+
+- [Julia Silge](https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA)
+
+- [David Robinson](https://www.youtube.com/channel/UCeiiqmVK07qhY-wvg3IZiZQ)
+
+---
+
+## Inspiration: Live streamers
+
+---
+
+class: middle
+
+.center[
+.huge[.hand[thank you!]]
+
+.large[🔗 [bit.ly/golive-uscots](https://bit.ly/golive-uscots)]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-light",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
