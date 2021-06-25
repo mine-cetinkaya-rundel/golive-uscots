@@ -2,11 +2,15 @@
 ## Live Coding as an (Incredibly) Effective Tool for Teaching Programming
 
 [USCOTS 2021](https://www.causeweb.org/cause/uscots/uscots21/workshop/10)  
-:calendar: Friday, June 25th  
-:clock4: 4:00 pm – 6:00 pm ET  
+Friday, June 25th, 2021  
+4:00 pm – 6:00 pm ET  
+
+---
 
 ### :computer: [Slides](https://mine-cetinkaya-rundel.github.io/golive-uscots/golive.html#1)
-### :cloud: [RStudio Cloud](https://bitly.com/golive-cloud): [bitly.com/golive-cloud](https://bitly.com/golive-cloud)
+### :cloud: [RStudio Cloud](https://bitly.com/golive-cloud)
+
+---
 
 ## Abstract
 
