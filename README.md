@@ -9,6 +9,7 @@ Friday, June 25th, 2021
 
 ### :computer: [Slides](https://mine-cetinkaya-rundel.github.io/golive-uscots/golive.html#1)
 ### :cloud: [RStudio Cloud](https://bitly.com/golive-cloud)
+### :pen: [Exercises](https://bitly.com/golive-cloud) (All of these can be found on RStudio Cloud as well, they're provided here for prticipants choosing to use their local setup)
 
 ---
 
