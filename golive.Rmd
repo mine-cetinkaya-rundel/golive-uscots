@@ -34,6 +34,7 @@ ggplot2::theme_set(ggplot2::theme_minimal(base_size = 16))
 # xaringanExtra
 library(xaringanExtra)
 xaringanExtra::use_panelset()
+library(countdown)
 ```
 
 layout: true
@@ -221,37 +222,54 @@ knitr::include_graphics("images/prerecord.png")
 
 .hand[e.g. meetup presentations, conference talks, etc.]
 
-<br>
+- Consider pre-recording a screencast that you can narrate during the event, especially useful for showing workflow
+  - Example: [Silent screencasts for teaching with RStudio Cloud](https://www.youtube.com/watch?v=Fz9UR6uxAG4&list=PLNUVZZ6hfXX05Bs80Hg5MjbOPnEFmwiOM&ab_channel=Mine%C3%87etinkaya-Rundel)
+- Consider using [asciicast](https://github.com/r-lib/asciicast) if just presenting code
 
-**Tip:** Consider pre-recording a screencast that you can narrate during the event
+---
+
+## Live coding - .hand[scripted]
+
+.question[
+**Demo:** Let's learn about data wrangling! 
+
+- Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
+- Join the workspace.
+- Click on **Projects** on the top bar.
+- Click **START** for the project titled *Hotel bookings*.
+- Watch me live code and follow along for Exercises 1 - 4.
+]
 
 ---
 
 ## Live coding - .hand[scripted]
 
 .your-turn[
-Let's learn about data wrangling! 
+**Your turn!**
 
 - Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
 - Join the workspace.
 - Click on **Projects** on the top bar.
 - Click **START** for the project titled *Hotel bookings*.
-
-**Demo:** Exercises 1-4  
-**Your turn:** Exercises 5-8 (15 minutes)  
-**Notes:** Add any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
+- Rotate live coders for each exercise, for Exercises 5-8
+- Add any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
 ]
+
+```{r echo=FALSE}
+countdown(minutes = 15)
+```
 
 ---
 
 ## Live coding - .hand[unscripted]
 
-.your-turn[
-Let's learn about parks! 
+.demo[
+**Demo:** Let's learn about parks! 
 
 - Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
 - Join the workspace (if you haven't yet done so) and click on **Projects** on the top bar.
 - Click **START** for the project titled *Parks*.
+- Watch me live code, follow along, and participate in the chat.
 ]
 
 ---
@@ -320,17 +338,21 @@ knitr::include_graphics("images/shiny-livecode.jpeg")
 
 ---
 
-class: middle
+## Live coding - .hand[unscripted]
 
 .your-turn[
-Let's explore Netflix titles! 
+**Your turn:** Let's explore Netflix titles! 
 
 - Go to [RStudio Cloud](https://bit.ly/golive-cloud): [bit.ly/golive-cloud](https://bit.ly/golive-cloud).
-- Join the workspace (if you haven't yet done so) and click on **Projects** on the top bar.
 - Click **START** for the project titled *Netflix titles*.
-- Improvise! 
-- **Notes:** Take notes on what feels good/right, what is challenging, or any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
+- Switch live coders every 5 minutes and improvise!
+  - Info on dataset is [here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-04-20/readme.md)
+- Take notes on what feels good/right, what is challenging, or any comments/questions that come up during the breakout session at [bit.ly/golive-doc](https://bit.ly/golive-doc).
 ]
+
+```{r echo = FALSE}
+countdown(minutes = 20)
+```
 
 ---
 
@@ -372,6 +394,26 @@ It’s important to take your students through the process of finding help as we
 
 class: middle
 
+# .hand[Sandbox] your live coding
+
+---
+
+## Sandbox your live coding with **learnr**
+
+- Create your course slides using [learnr](https://rstudio.github.io/learnr/)
+- Don't worry about writing automated feedback
+- Use the code boxes as your sandbox for presenting limited amounts of code
+
+--
+- Example: [Making histograms with ggplot2](https://rstudio.cloud/learn/primers/3.3)
+
+--
+- Want to learn more about learnr? See [Feedback at scale](https://www.rstudio.com/resources/rstudioglobal-2021/feedback-at-scale/) and the materials that go along with it.
+
+---
+
+class: middle
+
 # .hand[Learn more] about live coding
 
 ---
@@ -384,15 +426,14 @@ class: middle
 
 ---
 
-## Inspiration: Live coders on YouTube
+## Inspiration
 
-- [Julia Silge](https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA)
-
-- [David Robinson](https://www.youtube.com/channel/UCeiiqmVK07qhY-wvg3IZiZQ)
-
----
-
-## Inspiration: Live streamers
+- On YouTube:
+  - [Julia Silge](https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA)
+  - [David Robinson](https://www.youtube.com/channel/UCeiiqmVK07qhY-wvg3IZiZQ)
+  - [Data Science in a Box / me!](https://www.youtube.com/watch?v=r-uTBEclM1E&list=PLNUVZZ6hfXX1tyUykCWShOKZdIB0TIhtM&index=3&ab_channel=Mine%C3%87etinkaya-Rundel) -- See any video with *AE* (application exercise) or *Code along* in the title
+  
+- On Twitch: See Jesse Mostipak's roundup of [data science streamers on Twitch](https://www.jessemaegan.com/blog/2021-05-28-data-science-twitch-streamers-round-up/) (including Jesse!)
 
 ---
 
